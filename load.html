@@ -3,7 +3,6 @@
     <head>
         <meta name="viewport" content="width=device-width,initial-scale=0.7" charset="utf-8">
         <link rel="shortcut icon" href="icon.ico" type="image/icon">
-        <link rel="preload" href="home.html" type="document">
         <link rel="preload" href="SpryCollapsiblePanel.js" type="script">
         <link rel="preload" href="SpryTabbedPanels.js" type="script">
         <link rel="preload" href="SpryCollapsiblePanel.css" type="text/css">
@@ -17,13 +16,14 @@
         <link rel="preload" href="part5-06.svg" as="image">
         <link rel="preload" href="part1/001.webp" as="image">
         <link rel="preload" href="part2/001.webp" as="image">
+        <link rel="prerender" href="home.html">
         <script>
             function mainpage() {
                 if (document.readyState === 'complete') {
                     window.location.href = "home.html";
                 }
             }
-            window.setInterval("mainpage()", 5000);
+            window.setInterval("mainpage()", 12000);
         </script>
         <style>
             #Time,#p {

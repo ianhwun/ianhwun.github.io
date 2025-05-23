@@ -1,0 +1,412 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.7" charset="utf-8">
+        <link rel="shortcut icon" href="icon.ico" type="image/icon">
+        <style type="text/css">
+            @font-face {
+                font-family: "contecttitle";
+                src: url("contecttitle.woff") format("woff");
+            }
+
+            .contecttitle {
+	        font-family:contecttitle;
+                font-size: 20px;
+                color: #000;
+                text-align: center;
+            }
+
+            .contect {
+                font-size: 18px;
+                color: #FFF;
+                text-align: center;
+            }
+
+            .contect3 {
+                font-size: 14px;
+                color: #000;
+                text-align: justify;
+            }
+
+            .contect3small {
+                font-size: 12px;
+                color: #000;
+                text-align: justify;
+            }
+
+            .contect3tips {
+                font-size: 12px;
+                color: #BBB;
+                text-align: justify;
+            }
+
+            .contect3Heavy {
+                font-size: 14px;
+                color: #000;
+                text-align: justify;
+                font-weight: bold;
+            }
+
+            .CollapsiblePanelAlter {
+                margin: 0px;
+                padding: 0px;
+	        border-style:none;
+	        background-color:#333333;
+            }
+
+            .CollapsiblePanelTabAlter {
+                font: bold .7em sans-serif;
+                margin: 0px;
+                padding: 2px;
+                cursor: pointer;
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+            .CollapsiblePanelTab:hover {
+                background-color: #D7000F;
+            }
+
+            ::-webkit-scrollbar{display:none;}
+
+            a {
+                text-decoration: none
+            }
+
+            button {
+                border: solid 1px #999;
+            }
+
+            button:hover {
+                background-color: #D7000F
+            }
+        </style>
+        <link href="SpryCollapsiblePanel.css" rel="stylesheet" type="text/css">
+        <script src="SpryCollapsiblePanel.js" type="text/javascript"></script>
+        <link href="SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+        <script src="SpryTabbedPanels.js" type="text/javascript"></script>
+    </head>
+    <body style="background-color:#E5E5E5;background-image:linear-gradient(90deg, rgba(0.05,0.05,0.05,0.05)5%, rgba(0,0,0,0)5%), linear-gradient(0deg, rgba(0.05,0.05,0.05,0.05)5%, rgba(0,0,0,0)5%);background-size:20px 20px;margin:0;padding:0;">
+<table width="100%" height="80px" bgcolor="#222222" style="position:fixed;top:0px;z-index:100;"><tr><td align="center">
+                    <a href="load.html">
+                        <img src="LOGO.svg" width="180" alt="fantasy sample reels of ianhwun">
+                    </a>
+                </td></tr></table>
+        <table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr height="100">
+                <td></td>
+            </tr>
+            <tr height="20">
+                <td></td>
+            </tr>
+        </table>
+<div style="position:fixed;bottom:-10px;z-index:-100;">
+<table><tr>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+<td><table height="40"><tr><td style="border-right: 1px solid #777777;"></td><td><table><tr><td colspan="4" height="10"></td></tr><tr><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td><td width="8" height="30" style="border-right: 1px solid #777777;"></td></tr></table></td></tr></table></td>
+</tr></table>
+</div>
+<table width="100%" height="80px" bgcolor="#E5E5E5" style="position:fixed;bottom:0px;z-index:-200;border-top:1px solid #777777;"><tr><td></td></tr></table>
+<table width="100%" style="position:fixed;top:127px;right:600px;z-index:-50;"><tr><td><img src="BG-L.svg" height="525" width="1950" usemap="#noClick"></td><td width="50%"></td></tr></table>
+<table width="100%" style="position:fixed;top:127px;left:600px;z-index:-50;"><tr><td width="50%"></td><td><img src="BG-R.svg" height="525" width="1950" usemap="#noClick"></td></tr></table>
+
+        <table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <table width="474" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                            <td height="10"></td>
+                        </tr>
+                    </table>
+                    <table width="474" border="1" align="center" cellpadding="0" cellspacing="0" style="background-color:#FFF;border-style:none;">
+                        <tr>
+                            <td>
+                                <table width="440" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td height="8"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contecttitle">Part 1 设计摸鱼</td>
+                                    </tr>
+                                                   <tr>
+                                                        <td height="5"></td>
+                                                   </tr>
+                                    <tr>
+                                        <td>
+                                            <div id="CollapsiblePanel2" class="CollapsiblePanel">
+                                                <a onclick="part1no1.src='part1.html'">
+                                                    <div class="CollapsiblePanelTab" tabindex="0">
+                                                        <span class="contect">平面创意</span>
+                                                    </div>
+                                                </a>
+                                                <div class="CollapsiblePanelContent">
+                                                    <table style="position:relative;left:-5px;">
+                                                        <tr>
+                                                            <td width="12" align="center"></td>
+                                                            <td>
+                                                                <iframe id="part1no1" width="426" height="720" frameborder="0"></iframe>
+                                                            </td>
+                                                            <td width="12"></td>
+                                                        </tr>
+                                                    </table>
+                                                    <p align="center" style="position:relative;top:-10px;"><span class="contect3tips">（文章内向下滚动可继续閲读）</span></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="474" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                            <td height="20"></td>
+                        </tr>
+                    </table>
+                    <table width="474" border="1" align="center" cellpadding="0" cellspacing="0" style="background-color:#FFF;border-style:none;">
+                        <tr>
+                            <td>
+                                <table width="440" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td height="8"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contecttitle">Part 2 自我提昇</td>
+                                    </tr>
+                                                   <tr>
+                                                        <td height="5"></td>
+                                                   </tr>
+                                    <tr>
+                                        <td>
+                                            <div id="CollapsiblePanel4" class="CollapsiblePanel">
+                                                <a onclick="part2no1.src='part2.html'">
+                                                    <div class="CollapsiblePanelTab" tabindex="0">
+                                                        <span class="contect">眎觉萟术</span>
+                                                    </div>
+                                                </a>
+                                                <div class="CollapsiblePanelContent">
+                                                    <table style="position:relative;left:-5px;">
+                                                        <tr>
+                                                            <td width="12" align="center"></td>
+                                                            <td>
+                                                                <iframe id="part2no1" width="426" height="685" frameborder="0"></iframe>
+                                                            </td>
+                                                            <td width="12"></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="474" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                            <td height="20"></td>
+                        </tr>
+                    </table>
+                    <table width="474" border="1" align="center" cellpadding="0" cellspacing="0" style="background-color:#FFF;border-style:none;">
+                        <tr>
+                            <td>
+                                <table width="440" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td height="8"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contecttitle">Part 3 业馀甞试</td>
+                                    </tr>
+                                                   <tr>
+                                                        <td height="5"></td>
+                                                   </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="CollapsiblePanelAlter">
+                                                <a href="https://space.bilibili.com/37796796/video" target="_black">
+                                                    <div class="CollapsiblePanelTab" tabindex="0">
+                                                        <span class="contect">数媒短片</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="474" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                            <td height="20"></td>
+                        </tr>
+                    </table>
+                    <table width="474" border="1" align="center" cellpadding="0" cellspacing="0" style="background-color:#FFF;border-style:none;">
+                        <tr>
+                            <td>
+                                <table width="440" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td height="8"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contecttitle">Part 4 杂文随笔</td>
+                                    </tr>
+                                                   <tr>
+                                                        <td height="5"></td>
+                                                   </tr>
+                                    <tr>
+                                        <td>
+                                            <div id="CollapsiblePanel5" class="CollapsiblePanel">
+                                                <div class="CollapsiblePanelTab" tabindex="0">
+                                                    <span class="contect">敬请期待</span>
+                                                </div>
+                                                <div class="CollapsiblePanelContent">
+                                                    <table>
+                                                        <tr>
+                                                            <td width="8"></td>
+                                                            <td>
+                                                                <p>
+                                                                    <span class="contect3" align="center">　　敬请期待</span>
+                                                                </p>
+                                                            </td>
+                                                            <td width="8"></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="474" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                            <td height="20"></td>
+                        </tr>
+                    </table>
+                    <table width="474" border="1" align="center" cellpadding="0" cellspacing="0" style="background-color:#FFF;border-style:none;">
+                        <tr>
+                            <td>
+                                <table width="440" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td height="8"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contecttitle">Part 5 腦洞大开</td>
+                                    </tr>
+                                                   <tr>
+                                                        <td height="5"></td>
+                                                   </tr>
+                                    <tr>
+                                        <td>
+                                            <div id="CollapsiblePanel7" class="CollapsiblePanel">
+                                                <a onclick="part5no1.src='part5.html'">
+                                                    <div class="CollapsiblePanelTab" tabindex="0">
+                                                        <span class="contect">虚构语言</span>
+                                                    </div>
+                                                </a>
+                                                <div class="CollapsiblePanelContent">
+                                                    <table style="position:relative;left:-5px;">
+                                                        <tr>
+                                                            <td width="12" align="center"></td>
+                                                            <td>
+                                                                <iframe id="part5no1" width="426" height="720" frameborder="0"></iframe>
+                                                            </td>
+                                                            <td width="12"></td>
+                                                        </tr>
+                                                    </table>
+                                                    <p align="center" style="position:relative;top:-10px;"><span class="contect3tips">（文章内向下滚动可继续閲读）</span></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+<table><tr><td height="3"></td></tr></table>
+        <div align="center" style="position:relative;z-index:-2000;">
+            <iframe src="License_for_CC-BY-NC.html" width="520" height="52" frameborder="0" scrolling="no"></iframe></div>
+<table><tr><td height="9"></td></tr></table>
+<table style="position:fixed;top:20%;z-index:-500;width:100%;"><tr><td style="width:100%;padding-bottom:60%;"></td></tr><tr><td height="260"></td></tr><tr><td align="center"><img src="BG-B.svg" width="474" usemap="#noClick"></td></tr></table>
+            <script type="text/javascript">
+                var CollapsiblePanel2 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel2",{
+                    contentIsOpen: false
+                });
+                var CollapsiblePanel4 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel4",{
+                    contentIsOpen: false
+                });
+                var CollapsiblePanel5 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel5",{
+                    contentIsOpen: false
+                });
+                var CollapsiblePanel7 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel7",{
+                    contentIsOpen: false
+                });
+                var CollapsiblePanel8 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel8",{
+                    contentIsOpen: false
+                });
+                var CollapsiblePanel9 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel9",{
+                    contentIsOpen: false
+                });
+                var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+            </script>
+    </body>
+</html>
